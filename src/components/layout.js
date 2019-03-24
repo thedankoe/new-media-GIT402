@@ -64,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const MainWrapper = styled.main`
-  height: 100vh;
   padding: ${props => props.theme.sectionSpace} 0;
   background-image: linear-gradient(
       to right bottom,
@@ -76,11 +75,11 @@ const MainWrapper = styled.main`
     background-size: cover;
 `
 
-const Layout = ({ children, location, headerText, headerSub }) => (
+const Layout = ({ children, pageLink, pageSlug }) => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
-      <Header />
+      <Header pageLink={pageLink} pageSlug={pageSlug} />
       <MainWrapper>{children}</MainWrapper>
     </>
   </ThemeProvider>

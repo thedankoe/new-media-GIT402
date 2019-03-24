@@ -4,16 +4,16 @@ import { device } from './MediaQueries'
 
 const HeadingStyle = styled.h2`
   margin-bottom: ${props => props.theme.textSpace};
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 3.8rem;
   font-weight: 700;
   color: ${props => props.theme.primary};
-  text-align: center;
+  letter-spacing: 0.8rem;
   :after {
     content: '';
     height: 1px;
     width: 150px;
-    margin: 1.5rem auto 0 auto;
+    margin: 1.5rem auto 0 0;
     background: ${props => props.theme.secondaryLight};
     display: block;
 
@@ -31,10 +31,6 @@ const HeadingStyle = styled.h2`
 
   @media ${device.tabletL} {
     font-size: 2.5rem;
-  }
-
-  @media ${device.tabletS} {
-    text-align: left;
   }
 `
 

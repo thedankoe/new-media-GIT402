@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const PageWrapper = styled.div`
+export const PageWrapper = styled.div`
   width: 65%;
   margin: 0 auto;
   display: flex;
@@ -45,7 +45,7 @@ const InfoWrapper = styled.div`
 `
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageLink="blog" pageSlug="/blog">
     <SEO title="Home" />
     <PageWrapper>
       <div>
