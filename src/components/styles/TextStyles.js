@@ -36,11 +36,12 @@ const HeadingStyle = styled.h2`
 
 const HeadingStyleLight = styled.h2`
   margin-bottom: ${props => props.theme.textSpace};
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 3.8rem;
   font-weight: 700;
   color: #fff;
   text-align: center;
+  letter-spacing: 0.8rem;
   :after {
     content: '';
     height: 1px;
