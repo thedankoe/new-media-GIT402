@@ -4,6 +4,7 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import Header from './header'
 import { device } from './styles/MediaQueries'
 import BGImage from '../images/comedian-stage.jpg'
+import Footer from './footer';
 
 const theme = {
   primary: '#262626',
@@ -81,6 +82,7 @@ const Layout = ({ children, pageLink, pageSlug }) => (
       <GlobalStyle />
       <Header pageLink={pageLink} pageSlug={pageSlug} />
       <MainWrapper>{children}</MainWrapper>
+      <Footer />
     </>
   </ThemeProvider>
 )
